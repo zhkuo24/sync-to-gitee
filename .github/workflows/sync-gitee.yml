@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs at 01:00 UTC (9:00 AM Beijing) every day
-    - cron:  '20 2 * * *'
+    - cron:  '0 1 * * *'
 
 jobs:
   build:
@@ -24,4 +24,4 @@ jobs:
         timeout: 600
         debug: true
         force_update: true
-#         black_list: "mysql-server,kunpeng-mpam,hadoop,kunpengcompute.github.io"
+        black_list: "zhkuo24,zhkuo24.github.io,blog,web_tools,iOS-Learn-Demo,wechatrobot,Python-myproject,TWeather"
